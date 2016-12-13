@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Asanas for Days</h1>
+<p>Welcome to your own personal Yoga Asana database!</p>
+<h2>Here are the Asana's that are currently in the database:</h2>
+
+<ul>
+  {{#each asanas}}
+    <li>
+      <a href="/{{this.id}}">{{this.name}}</a>
+    </li>
+  {{/each}}
+</ul>
