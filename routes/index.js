@@ -33,8 +33,15 @@ router.post('/', function (req, res) {
 router.get('/:id', function (req, res) {
   knex('asana')
     .where('id', req.params.id)
+    .first()
     .then((asana) => {
-      res.render('asana_by_id', {title: asana.name});
+      console.log(asana);
+      res.render('asana_by_id', {
+        name: asana.name,
+        primary_target: asana.primary_target,
+        duration: asana.duration,
+        difficulty: asana.difficulty
+      });
     });
 
 });
