@@ -66,7 +66,7 @@ router.get('/:id', function (req, res) {
 });
 
 // DELETE route
-router.post('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   let id = req.params.id;
   knex('asana')
     .where('id', id)
@@ -77,7 +77,7 @@ router.post('/:id', (req, res) => {
 });
 
 // PUT route
-router.post('/:id/edit', (req, res) => {
+router.put('/:id/edit', (req, res) => {
   let id = req.params.id;
   let edit = req.body;
   knex('asana')
