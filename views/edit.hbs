@@ -2,34 +2,34 @@
     <div class="col s10 offset-s1">
         <div class="card blue-grey darken-1">
             <div class="center-align card-content white-text">
-                <span class="card-title">Add An Asana</span>
+                <span class="card-title">Edit {{name}}</span>
             </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-   <form class="col s12" action="/" method="post">
+   <form class="col s12" action="/{{id}}/edit" method="post">
      <div class="row">
        <div class="input-field col s6">
-         <input name="name" id="name" type="text" class="validate">
+         <input name="name" id="name" type="text" class="validate" value="{{this.name}}">
          <label for="name">Name</label>
        </div>
        <div class="input-field col s6">
-         <input name="primary_target" id="primary_target" type="text" class="validate">
+         <input name="primary_target" id="primary_target" type="text" class="validate" value="{{this.primary_target}}">
          <label for="primary_target">Primary Target</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s6">
-         <input name="duration" id="duration" type="number" min="0" max="30" class="validate">
+         <input name="duration" id="duration" type="number" min="0" max="30" class="validate" value="{{duration}}">
          <label for="duration">Duration</label>
        </div>
        <div class="input-field col s6">
-         <input name="difficulty" id="difficulty" type="number" min="1" max="5" class="validate">
+         <input name="difficulty" id="difficulty" type="number" min="1" max="5" class="validate" value="{{difficulty}}">
          <label for="difficulty">Difficulty</label>
        </div>
      </div>
-     <button type="submit">Submit New Asana</button>
+     <button type="submit">Submit Edits</button>
    </form>
  </div>
