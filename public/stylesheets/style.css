@@ -14,3 +14,7 @@ tr.main-table-row {
 span.card-title {
   font-size: 2em !important;
 }
+
+a.waves-effect.waves-light.btn-large {
+  margin-top: 1em;
+}

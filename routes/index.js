@@ -7,7 +7,6 @@ var knex = require('../db/knex');
 router.get('/', function(req, res, next) {
   return knex('asana')
     .then((asanas) => {
-      console.log(asanas);
       res.render('index', { asanas: asanas });
     });
 });
