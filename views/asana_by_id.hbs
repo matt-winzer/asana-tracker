@@ -3,13 +3,22 @@
         <div class="card blue-grey darken-1">
             <div class="card-content white-text">
                 <span class="card-title">{{name}}</span>
-                <h5>{{name}} primarily targets your {{primary_target}}.</h5>
-                <h5>It is recommended to stay in {{name}} for about {{duration}} minutes.</h5>
-                <h5>{{name}} is rated {{difficulty}}/5 in difficulty.</p>
+                <h5><span class="asana-name">{{name}}</span> primarily targets your {{primary_target}}.</h5>
+                <h5>It is recommended to stay in <span class="asana-name">{{name}}</span> for about {{duration}} minutes.</h5>
+                <h5><span class="asana-name">{{name}}</span> is rated {{difficulty}}/5 in difficulty.</p>
             </div>
             <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+                <div class="row button-container">
+                  <form class="" action="index.html" method="post">
+                    <a href="/" class="waves-effect waves-light btn">Home</a>
+                  </form>
+                  <form class="edit-button" action="index.html" method="post">
+                    <button class="waves-effect waves-light btn" type="button" name="button">Edit</button>
+                  </form>
+                  <form class="delete-button" action="/{{id}}" method="post">
+                    <button class="waves-effect waves-light btn" type="submit" name="delete-button">Delete</button>
+                  </form>
+                </div>
             </div>
         </div>
     </div>

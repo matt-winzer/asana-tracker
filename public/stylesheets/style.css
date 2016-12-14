@@ -11,10 +11,22 @@ tr.main-table-row {
   cursor: pointer;
 }
 
-span.card-title {
-  font-size: 2em !important;
+.card
+.card-title {
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 a.waves-effect.waves-light.btn-large {
   margin-top: 1em;
+}
+
+.row.button-container {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+}
+
+span.asana-name {
+  text-transform: capitalize;
 }

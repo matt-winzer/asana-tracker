@@ -39,13 +39,23 @@ router.get('/:id', function (req, res) {
     .then((asana) => {
       console.log(asana);
       res.render('asana_by_id', {
+        id: asana.id,
         name: asana.name,
         primary_target: asana.primary_target,
         duration: asana.duration,
         difficulty: asana.difficulty
       });
     });
+});
 
+router.post('/:id', (req, res) => {
+  let id = req.params.id;
+  knex('asana')
+    .where('id', id)
+    .del()
+    .then((result) => {
+      res.redirect('/');
+    });
 });
 
 
