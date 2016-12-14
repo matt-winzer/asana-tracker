@@ -19,6 +19,10 @@ router.get('/asanas', function(req, res) {
     });
 });
 
+router.get('/new', function(req, res) {
+  res.render('new');
+});
+
 
 // Berto's Breakout code
 router.post('/', function (req, res) {

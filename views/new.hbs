@@ -1,6 +1,43 @@
-<h1>Add New!</h1>
+<h1>Add a new Asana!</h1>
 
-<form class="" action="/" method="post">
-  <input type="text" name="name" placeholder="name "value="">
-  <input type="text" name="description" value="">
-</form>
+<div class="row">
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s6">
+         <input placeholder="Placeholder" id="name" type="text" class="validate">
+         <label for="name">Name</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="primary_target" type="text" class="validate">
+         <label for="primary_target">Primary Target</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s6">
+         <input value="I am not editable" id="duration" type="number" class="validate">
+         <label for="disabled">Disabled</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="password" type="password" class="validate">
+         <label for="password">Password</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="email" type="email" class="validate">
+         <label for="email">Email</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col s12">
+         This is an inline input field:
+         <div class="input-field inline">
+           <input id="email" type="email" class="validate">
+           <label for="email" data-error="wrong" data-success="right">Email</label>
+         </div>
+       </div>
+     </div>
+   </form>
+ </div>

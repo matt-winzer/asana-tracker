@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+tr.main-table-row {
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 2em;
+}
