@@ -11,6 +11,6 @@ tr.main-table-row {
   cursor: pointer;
 }
 
-.card-title {
-  font-size: 2em;
+span.card-title {
+  font-size: 2em !important;
 }
